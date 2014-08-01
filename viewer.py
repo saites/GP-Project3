@@ -3,7 +3,7 @@ from pygame.locals import *
 from numpy import rot90, zeros
 
 class Viewer:
-    def __init__(self, world, w=280, h=180):
+    def __init__(self, world, w=640, h=480):
         self.world = world
         self.players = []
 

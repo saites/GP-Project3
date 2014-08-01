@@ -100,7 +100,7 @@ class GeneticProgram:
         self.fitness = fitness
 
         self.fitness.sort(lambda x,y : x[1] - y[1])
-        print [i[1] for i in self.fitness]
+        print [i[1]+100 for i in self.fitness]
 
         if self.fitness[-1][1] != 0:
             fsum = float(sum(f[1] for f in self.fitness))
